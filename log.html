@@ -1,0 +1,244 @@
+
+<!DOCTYPE>
+<HTML>
+<head>
+	<meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<link rel="stylesheet" href="mdb/css/bootstrap.min.css">
+<link rel="stylesheet" href="mdb/css/mdb.min.css">
+<link rel="stylesheet" href="mdb/css/style.css">
+
+<title> Login</title>
+<link rel="icon"  href="data:image/png;base64,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"/>
+</head>
+
+<BODY>
+	
+<nav style="background-color:#33b5e5 !important; " class="navbar navbar-expand-lg navbar-dark bg-primary" >
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div style="justify-content: flex-start;" class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="smart electric.html">Principal <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Service
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Electricité Batiment</a>
+          <a class="dropdown-item" href="#">Vidéo Surviellance</a>
+          <a class="dropdown-item" href="#">Controle d'accées</a>
+          <a class="dropdown-item" href="#">Alarme</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="contact.html" >Contact</a>
+      </li>
+    </ul>
+
+    
+  </div>
+  <a class="navbar-brand" href="#">
+    <img src="image/logo1.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    Smart Electric
+  </a>
+</nav>
+
+	<!-- Default form login -->
+<form style="max-width: 550px;margin:20px auto;" class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Sign in</p>
+
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+
+    <div class="d-flex justify-content-around">
+        <div>
+            <!-- Remember me -->
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+            </div>
+        </div>
+        <div>
+            <!-- Forgot password -->
+            <a href="">Forgot password?</a>
+        </div>
+    </div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+    <!-- Register -->
+    <p>Not a member?
+        <a href="">Register</a>
+    </p>
+
+    <!-- Social login -->
+    <p>or sign in with:</p>
+
+    <a href="#" class="mx-2" role="button"><i class="fab fa-facebook-f light-blue-text"></i></a>
+    <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
+    <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+    <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a>
+
+</form>
+<!-- Default form login -->
+    
+    <!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Smart Electric</h6>
+        <p>Electricité générale, Dépannages et réparations, Nouvelle installation sur les normes,Réseaux,Caméra et interphonie, Alarme, Antenne ...</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+        <p>
+          <a href="#!">Eléctricité Générale</a>
+        </p>
+        <p>
+          <a href="#!">Vidéo Surveillance</a>
+        </p>
+        <p>
+          <a href="#!">Contrôle D'accès</a>
+        </p>
+        <p>
+          <a href="#!">Alarme</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <a href="carte.html">
+          <i class="fas fa-home mr-3"></i> ANNABBA, 23000, ALGERIE</p>
+          </a>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> rahmaniabdelkrim66@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> 0 798 27 58 57</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> 0 770 10 98 86</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/">
+            <strong> Smart Electric.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            
+            <li class="list-inline-item">
+
+              <a a href="https://www.facebook.com/Electricit%C3%A9-G%C3%A9n%C3%A9rale-2302374629791421/"class="btn-floating btn-sm rgba-white-slight mx-1">
+
+                <i class="fab fa-facebook-f"></i></a>
+            
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+	
+<script type="text/javascript" src="mdb/js/jquery.min.js"></script>
+<script type="text/javascript" src="mdb/js/popper.min.js"></script>
+<script type="text/javascript" src="mdb/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="mdb/js/mdb.min.js"></script>
+</BODY>
+</HTML>
